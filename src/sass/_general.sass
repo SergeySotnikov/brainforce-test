@@ -67,13 +67,19 @@
         form
             .search
                 width: 77px
+                outline: 0
                 border: none
                 border-bottom: 1px dashed #333333
+                transition: all .5s
                 &:focus
-                    outline: 0
+                    width: 144px
             input::-webkit-input-placeholder
                 font-weight: normal
                 font-size: 18px
                 letter-spacing: 0.02em
-                color: #333333     
-
+                color: #333333   
+            input:-moz-placeholder
+                font-weight: normal
+                font-size: 18px
+                letter-spacing: 0.02em
+                color: #333333 
