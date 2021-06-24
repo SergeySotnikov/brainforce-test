@@ -1,0 +1,79 @@
+.header
+    padding-top: 16px
+    padding-bottom: 19.5px
+    &__logo
+        .logo
+            width: 50px
+            height: 65px
+            fill: #333333
+    &__phone
+        .mumber-phone
+            display: block
+            text-decoration: none
+            font-weight: normal
+            font-size: 18px  
+            &:hover
+                color:#828282
+    &__nav
+        .menu
+            display: flex
+            list-style-type: none
+            padding: 0
+            margin: 0
+            &__item
+                margin-right: 40px
+                &:last-child
+                    margin-right: 0
+            &__link
+                position: relative
+                font-weight: normal
+                font-size: 18px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute 
+                    top: -55px
+                    width: 100%
+                    height: 10px
+                    background: #FFDB2D
+                    border-radius: 0px 0px 8px 8px
+                    transition: all .2s
+                &:hover
+                    color:#828282
+                    &::before
+                        top: -38px
+    &__btn
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        .consultation-btn
+            margin-left: 36px
+            padding: 12px 20px
+            border: 1px solid #333333
+            box-sizing: border-box
+            border-radius: 8px
+            font-weight: normal
+            font-size: 15px
+            text-align: center
+            letter-spacing: 0.02em
+            background-color: unset
+            transition: all .2s
+            &:hover
+                background-color:#FFDB2D
+                border-color: #FFDB2D
+            &:active
+                background-color:#FFE568
+                border-color: #FFE568
+        form
+            .search
+                width: 77px
+                border: none
+                border-bottom: 1px dashed #333333
+                &:focus
+                    outline: 0
+            input::-webkit-input-placeholder
+                font-weight: normal
+                font-size: 18px
+                letter-spacing: 0.02em
+                color: #333333     
+
