@@ -22,6 +22,11 @@
                 margin-right: 40px
                 &:last-child
                     margin-right: 0
+                &:nth-child(4)
+                    .menu__link
+                        color:#828282
+                        &::before
+                            top: -38px
             &__link
                 position: relative
                 font-weight: normal
@@ -39,7 +44,7 @@
                 &:hover
                     color:#828282
                     &::before
-                        top: -38px
+                        top: -38px          
     &__btn
         display: flex
         justify-content: flex-end
@@ -57,11 +62,12 @@
             background-color: unset
             transition: all .2s
             &:hover
-                background-color:#FFDB2D
-                border-color: #FFDB2D
+                color: #FFFFFF
+                background-color:#828282
+                border-color: #828282
             &:active
-                background-color:#FFE568
-                border-color: #FFE568
+                 background-color:#aaaaaa
+            
         form
             .search
                 width: 77px
@@ -83,6 +89,10 @@
                 color: #333333 
 .questions
     padding-top: 67px
+    padding-bottom: 90px
+    background-image: url(../img/bg_img.jpg)
+    background-repeat: no-repeat
+    background-position: bottom  right
     .main-page-link
         font-weight: normal
         font-size: 18px
@@ -133,6 +143,7 @@
                     border-radius: 8px
             &-button
                 padding: 26px 30px
+                padding-right: 40px
                 background-color: #F4F4F4
                 border-radius: 8px
                 box-shadow: unset
@@ -146,8 +157,9 @@
             &-body
                 font-weight: normal
                 font-size: 16px
+                padding-top: 0
                 padding-left: 40px
-                padding-right: 89px
+                padding-right: 80px
                 padding-bottom: 37px
         .row:not(:first-child)
             margin-top: 70px
