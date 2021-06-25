@@ -12,8 +12,6 @@
             text-decoration: none
             font-weight: normal
             font-size: 18px  
-            &:hover
-                color:#828282
     &__nav
         .menu
             display: flex
@@ -83,3 +81,73 @@
                 font-size: 18px
                 letter-spacing: 0.02em
                 color: #333333 
+.questions
+    padding-top: 67px
+    .main-page-link
+        font-weight: normal
+        font-size: 18px
+        letter-spacing: 0.02em
+    .chat-wrapper
+        height: 764px
+        padding-top: 157px
+        background: #E0E0E0
+        border-radius: 8px
+        h4
+            text-align: center
+    &__title
+        margin-top: 10px
+        font-style: normal
+        font-weight: bold
+        font-size: 30px
+    &__descr
+        margin-top: 20px
+        margin-bottom: 0
+        font-weight: normal
+        font-size: 16px
+        line-height: 130%
+        color: #828282
+    .accordion-wrapper
+        margin-top: 40px
+        &__title
+            position: relative
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 181px
+                height: 2px
+                right: 0px
+                top: 62px
+                background: #FFDB2D
+                border-radius: 8px
+        .accordion
+            &-item
+                margin-bottom: 5px
+                background-color: #F4F4F4
+                border: none
+                border-radius: 8px
+                &:last-of-type .accordion-button.collapsed
+                    border-radius: 8px
+            &-button
+                padding: 26px 30px
+                background-color: #F4F4F4
+                border-radius: 8px
+                box-shadow: unset
+                font-weight: 500
+                font-size: 16px
+                color: #333333
+                &::after
+                    background-image: url(../icons/more-open.svg)
+            &-button:not(.collapsed)::after
+                transform: rotate(-225deg)
+            &-body
+                font-weight: normal
+                font-size: 16px
+                padding-left: 40px
+                padding-right: 89px
+                padding-bottom: 37px
+        .row:not(:first-child)
+            margin-top: 70px
