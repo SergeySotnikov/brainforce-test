@@ -43,7 +43,10 @@
               <form>
                 <input class="search" type="text" placeholder="Поиск">
               </form>
-             <button class="consultation-btn"> Консультация </button>
+              <!-- <button type="button" class="btn btn-primary consultation-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+               Консультация
+              </button> -->
+              <a class="btn btn-primary consultation-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Консультация</a>
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@
               </div>
 
               <div class="accordion-wrapper">
-                
+
                 <div class="row">
                   <div class="col-xxl-3">
                     <h2 class="accordion-wrapper__title">Сертификация
@@ -273,6 +276,94 @@
 
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-5 p-0">
+            <h2 class="footer__title">
+              ООО «Центр стратегии и развития мозга»
+            </h2>
+            <div class="footer__contacts">
+              <div class="contacts-item">
+                <h3 class="contacts-item__title">Отдел сертификации</h3>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+              </div>
+
+              <div class="contacts-item">
+                <h3 class="contacts-item__title">Отдел технических условий</h3>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+              </div>
+
+              <div class="contacts-item">
+                <h3 class="contacts-item__title">Отдел сертификации в строительстве</h3>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+              </div>
+
+              <div class="contacts-item">
+                <h3 class="contacts-item__title">Отдел сертификации систем менеджмента качества</h3>
+                <a href="tel:+375 11 555-55-55" class="contacts-item__tel">+375 11 555-55-55</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xxl-4">
+                <nav>
+                  <ul class="footer__nav">
+                    <li ><a class="footer__link" href="#">Услуги</a></li>
+                    <li ><a class="footer__link" href="#">О компании</a></li>
+                    <li ><a class="footer__link" href="#">Блог</a></li>
+                    <li ><a class="footer__link" href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-xxl-8">
+                <div class="feedback-info">
+                  <a href="mailto: info@brainforce.by" class="feedback-info__email">info@brainforce.by</a>
+                  <p class="feedback-info__address">Беларусь, Минск, ул. М.Богдановича, 155</p>
+                  <p class="feedback-info__working">Пн. - Пт. с 9:00 до 17:30</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-7">
+            <div class="footer__map">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Заполните форму и закажите бесплатную консультацию</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           ///
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" type="submit" >Заказать консультацию</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog2 modal-dialog-centered">
+        <div class="modal-content modal-content2">
+          
+          <div class="modal-body modal-body2">
+            <button type="button" class="btn-close btn-close2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h3>Спасибо!</h3>
+            <p>Скоро с вами свяжется консультант <br> для уточнения деталей</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   <script src="./js/bootstrap.bundle.min.js"></script>
