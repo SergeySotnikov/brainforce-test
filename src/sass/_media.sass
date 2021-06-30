@@ -87,10 +87,8 @@
             .accordion-button,.accordion-body
                 font-size: 14px
 
-        
-
 @media (max-width: 991px)
-     .header
+    .header
         &__logo
             .logo
                 width: 40px
@@ -128,8 +126,45 @@
                 padding: 10px 10px
                 margin-left: 12px
                 font-size: 10px
-
+    .questions
+        .chat-wrapper
+            margin-top: 70px           
+        .accordion-wrapper
+            .accordion
+                margin-top: 20px
+    .footer
+        &__map
+            margin-top: 40px
+            &::before
+                content: ''
+                display: block
+                padding-top: 75%
 
 @media (max-width: 767px)
-     .header
-       
+    .header
+    .footer
+        &__title
+            font-size: 24px
+
+@media (max-width: 575px) 
+    .questions 
+        .chat-wrapper
+            height: 500px
+    .footer
+        &__title
+            font-size: 17px   
+        &__contacts
+            .contacts-item__title
+                font-size: 14px
+        &__link 
+            font-size: 14px
+        .feedback-info
+            margin-top: 20px
+            &__email,&__address,&____working
+                font-size: 14px    
+
+@media (max-width: 424px) 
+    .footer
+        &__contacts
+           .contacts-item__tel
+               display: block
